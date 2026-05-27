@@ -651,16 +651,19 @@
   }
 }
 
-/* SHAP Media: metallic — always on white surface */
+/* SHAP Media: monochrome flat — same treatment as OooBooGoo */
 .logo-shap-wrap {
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px 24px;
   display: inline-flex;
   align-items: center;
-  box-shadow: var(--shadow-sm);
 }
 .logo-shap {
   display: block;
   width: auto;
+  mix-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+  .logo-shap {
+    mix-blend-mode: normal;
+    filter: invert(1);
+  }
 }

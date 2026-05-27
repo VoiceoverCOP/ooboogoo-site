@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with OooBooGoo Inc. — business inquiries, partnerships, media, and support.",
+    "Get in touch with OooBooGoo Inc. - business inquiries, partnerships, media, and support.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
         </h1>
         <p className="hero-body">
           Whether it&apos;s a business inquiry, a consulting engagement, a
-          partnership proposal, or a product question — reach out and
+          partnership proposal, or a product question - reach out and
           we&apos;ll respond within one business day.
         </p>
       </section>
@@ -85,7 +85,7 @@ export default function ContactPage() {
               <select id="inquiry" name="subject" className="form-select">
                 <option>Business inquiry</option>
                 <option>SHAP Media consulting</option>
-                <option>Rede.fm — product question</option>
+                <option>Rede.fm - product question</option>
                 <option>Partnership proposal</option>
                 <option>Press / media request</option>
                 <option>General question</option>

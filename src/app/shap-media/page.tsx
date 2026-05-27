@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "SHAP Media Group",
   description:
-    "SHAP Media Group is the media consulting and production arm of OooBooGoo Inc. — strategic communications, livestream systems, creator coaching, and content strategy.",
+    "SHAP Media Group is the media consulting and production arm of OooBooGoo Inc. - strategic communications, livestream systems, creator coaching, and content strategy.",
 };
 
 const services = [
   {
     title: "Livestream Consulting",
-    desc: "End-to-end production strategy for live broadcasts — from technical setup and platform selection to show structure and audience engagement systems.",
+    desc: "End-to-end production strategy for live broadcasts - from technical setup and platform selection to show structure and audience engagement systems.",
   },
   {
     title: "Creator Coaching",
@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Social Media Systems",
-    desc: "Building repeatable, operationally sustainable social content systems — not one-off campaigns, but workflows that scale with a team.",
+    desc: "Building repeatable, operationally sustainable social content systems - not one-off campaigns, but workflows that scale with a team.",
   },
   {
     title: "Strategic Communications",
@@ -34,11 +34,11 @@ const services = [
   },
   {
     title: "Production Direction",
-    desc: "Creative direction and production oversight for video, audio, and live productions — from pre-production planning through final delivery.",
+    desc: "Creative direction and production oversight for video, audio, and live productions - from pre-production planning through final delivery.",
   },
   {
     title: "Media Systems Audits",
-    desc: "A structured review of existing media operations, tooling, and workflows — with a clear written report and prioritised recommendations.",
+    desc: "A structured review of existing media operations, tooling, and workflows - with a clear written report and prioritised recommendations.",
   },
 ];
 
@@ -46,23 +46,23 @@ export default function ShapMediaPage() {
   return (
     <>
       <section aria-labelledby="shap-heading" className="hero">
-        <div className="logo-shap-wrap" style={{ marginBottom: 28 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 28 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-shap-media.PNG"
+            src="/SMG CREST.jpg"
             alt="SHAP Media Group"
             className="logo-shap"
-            style={{ height: 64 }}
+            style={{ height: 48, display: "block" }}
           />
+          <p className="hero-eyebrow" style={{ margin: 0 }}>SHAP Media Group</p>
         </div>
-        <p className="hero-eyebrow">SHAP Media Group</p>
         <h1 id="shap-heading" className="hero-title">
           Operational media expertise for creators who are building something real.
         </h1>
         <p className="hero-body">
           SHAP Media Group is the consulting and production arm of OooBooGoo Inc.
           We work with creators, media organisations, and brands that need more
-          than advice — they need systems that actually operate.
+          than advice - they need systems that actually operate.
         </p>
         <div className="hero-actions">
           <Link href="/contact" className="btn btn-primary">Start a conversation</Link>
@@ -78,7 +78,7 @@ export default function ShapMediaPage() {
           What we do.
         </h2>
         <p className="section-body">
-          Every engagement begins with understanding the full context — the
+          Every engagement begins with understanding the full context - the
           creator&apos;s goals, their current operations, their audience, and the
           constraints they&apos;re working within. From there we design systems that
           fit, not templates borrowed from someone else&apos;s playbook.
@@ -124,7 +124,7 @@ export default function ShapMediaPage() {
         </h2>
         <p className="section-body">
           All engagements begin with a discovery conversation. There&apos;s no
-          hard sell — we want to understand your goals before proposing anything.
+          hard sell - we want to understand your goals before proposing anything.
           If we&apos;re not the right fit, we&apos;ll say so.
         </p>
         <div style={{ marginTop: 32 }}>

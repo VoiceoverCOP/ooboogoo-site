@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Platform",
   description:
-    "OooBooGoo builds software designed for the Apple ecosystem and the creator technology stack — from calendar integration to publishing APIs.",
+    "OooBooGoo builds software designed for the Apple ecosystem and the creator technology stack - from calendar integration to publishing APIs.",
 };
 
 const integrationCategories = [
@@ -16,7 +16,7 @@ const integrationCategories = [
       { icon: "🔔", title: "Apple Push Notifications (APNs)", desc: "Real-time notifications for show reminders, guest confirmations, and production alerts." },
       { icon: "📅", title: "Calendar Integration", desc: "EventKit-compatible show scheduling synced to the system calendars creators use every day." },
       { icon: "⌨️", title: "Shortcuts & Automation", desc: "Siri Shortcuts support so power users can trigger Rede.fm actions from their own automation flows." },
-      { icon: "🖥️", title: "macOS & iOS Native Feel", desc: "Designed to behave like Apple platform software — not a web app ported to a container." },
+      { icon: "🖥️", title: "macOS & iOS Native Feel", desc: "Designed to behave like Apple platform software - not a web app ported to a container." },
     ],
   },
   {
@@ -29,10 +29,17 @@ const integrationCategories = [
     ],
   },
   {
+    title: "Mobile Apps",
+    items: [
+      { icon: "📱", title: "iOS App", desc: "A native iPhone and iPad app so creators can manage shows, guests, and prep workflows on the go. Coming soon." },
+      { icon: "🤖", title: "Android App", desc: "Full Android support bringing Rede.fm's preparation tools to Android creators wherever they work. Coming soon." },
+    ],
+  },
+  {
     title: "APIs & Automation",
     items: [
       { icon: "🔗", title: "Rede.fm API", desc: "A RESTful API for developers integrating Rede.fm data into their own tools and workflows." },
-      { icon: "🤖", title: "AI Preparation Layer", desc: "AI-assisted research, briefing generation, and question drafting — integrated directly into the preparation workflow." },
+      { icon: "🤖", title: "AI Preparation Layer", desc: "AI-assisted research, briefing generation, and question drafting - integrated directly into the preparation workflow." },
       { icon: "⚙️", title: "Webhook Support", desc: "Event-driven webhooks for show state changes, guest confirmations, and publishing milestones." },
       { icon: "🔄", title: "Automation-Ready Architecture", desc: "Designed to connect with automation platforms and custom internal tooling." },
     ],
@@ -49,7 +56,7 @@ export default function PlatformPage() {
         </h1>
         <p className="hero-body">
           Everything we build is designed to work within existing creative and
-          technical ecosystems — not to replace them. Our platform philosophy
+          technical ecosystems - not to replace them. Our platform philosophy
           is integration-first: meet creators where they already are.
         </p>
       </section>
@@ -63,7 +70,7 @@ export default function PlatformPage() {
         </h2>
         <p className="section-body">
           The creator technology stack is already complex. Our software is
-          designed as a complement to that stack — connecting with the
+          designed as a complement to that stack - connecting with the
           calendars, notifications, publishing systems, and APIs creators
           already depend on. We follow platform standards, respect user
           privacy, and contribute to the ecosystem rather than fragment it.

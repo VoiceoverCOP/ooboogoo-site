@@ -19,10 +19,10 @@ export default function Nav() {
         <Link href="/" aria-label="OooBooGoo home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-ooboogoo.png"
+            src="/ooboogoo-logo-trim.jpg"
             alt="OooBooGoo"
             className="logo-ooboogoo"
-            style={{ height: 28 }}
+            style={{ height: 36 }}
           />
         </Link>
         <nav aria-label="Main navigation" className="nav-links">

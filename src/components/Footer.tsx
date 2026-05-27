@@ -9,13 +9,13 @@ export default function Footer() {
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-ooboogoo.png"
+            src="/ooboogoo-logo-trim.jpg"
             alt="OooBooGoo"
             className="logo-ooboogoo"
-            style={{ height: 36, marginBottom: 14 }}
+            style={{ height: 56, marginBottom: 14 }}
           />
           <p className="footer-tagline">
-            An innovation lab, media group, and creator platform company — building systems for what comes next.
+            An innovation lab, media group, and creator platform company - building systems for what comes next.
           </p>
           <address className="footer-address" style={{ fontStyle: "normal" }}>
             OooBooGoo Inc.<br />

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Support for OooBooGoo Inc. products — Rede.fm, SHAP Media services, and general inquiries.",
+    "Support for OooBooGoo Inc. products - Rede.fm, SHAP Media services, and general inquiries.",
 };
 
 const faqSections = [
@@ -30,19 +30,19 @@ const faqSections = [
     items: [
       {
         q: "What is Rede.fm?",
-        a: "Rede.fm is a preparation and production platform for creators, podcasters, broadcasters, and live show hosts. It covers show planning, guest management, media kits, publishing workflows, and AI-assisted preparation — everything that happens before you go live.",
+        a: "Rede.fm is a preparation and production platform for creators, podcasters, broadcasters, and live show hosts. It covers show planning, guest management, media kits, publishing workflows, and AI-assisted preparation - everything that happens before you go live.",
       },
       {
         q: "How do I get access to Rede.fm?",
         a: "Rede.fm is currently in limited release. You can request access via the Rede.fm page or by visiting rede.fm directly. We review access requests on a rolling basis and notify accepted users by email.",
       },
       {
-        q: "I'm having trouble with my Rede.fm account — who do I contact?",
+        q: "I'm having trouble with my Rede.fm account - who do I contact?",
         a: "Email support@ooboogoo.com with a description of the issue and, if possible, your account email address. We aim to respond within one business day.",
       },
       {
         q: "Does Rede.fm work on iPhone and iPad?",
-        a: "Rede.fm is designed with Apple ecosystem compatibility as a core requirement — including iOS and iPadOS. Access and availability details are provided to users after onboarding.",
+        a: "Rede.fm is designed with Apple ecosystem compatibility as a core requirement - including iOS and iPadOS. Access and availability details are provided to users after onboarding.",
       },
       {
         q: "How does Rede.fm handle my data?",
@@ -78,8 +78,7 @@ export default function SupportPage() {
           How can we help?
         </h1>
         <p className="hero-body">
-          Find answers to common questions below, or reach out directly —
-          we respond within one business day.
+          Find answers to common questions below, or reach out directly -          we respond within one business day.
         </p>
         <div className="hero-actions">
           <a href="mailto:support@ooboogoo.com" className="btn btn-primary">Email Support</a>

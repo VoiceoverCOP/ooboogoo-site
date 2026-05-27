@@ -12,22 +12,22 @@ const features = [
   {
     icon: "📋",
     title: "Show Planning & Scheduling",
-    desc: "Structure every episode before it happens. Topics, segments, timing, notes, and assets — all in one place before you hit record.",
+    desc: "Structure every episode before it happens. Topics, segments, timing, notes, and assets - all in one place before you hit record.",
   },
   {
     icon: "🎙️",
     title: "Guest Management",
-    desc: "Track every guest from outreach through post-show. Bios, talking points, availability, prep materials, and follow-up — in a single flow.",
+    desc: "Track every guest from outreach through post-show. Bios, talking points, availability, prep materials, and follow-up - in a single flow.",
   },
   {
     icon: "📁",
     title: "Media Kits & Creator Profiles",
-    desc: "A living media kit for every show and every creator. Up-to-date, shareable, and professional — without manual maintenance.",
+    desc: "A living media kit for every show and every creator. Up-to-date, shareable, and professional - without manual maintenance.",
   },
   {
     icon: "🎯",
     title: "Audience Intake Systems",
-    desc: "Customisable intake forms for audiences, listeners, and attendees. Collect what you need before the show — not after.",
+    desc: "Customisable intake forms for audiences, listeners, and attendees. Collect what you need before the show - not after.",
   },
   {
     icon: "⚡",
@@ -42,12 +42,12 @@ const features = [
   {
     icon: "📡",
     title: "Live Show Structure",
-    desc: "Run-of-show documents, segment timers, and live production checklists — designed for the real conditions of live broadcasting.",
+    desc: "Run-of-show documents, segment timers, and live production checklists - designed for the real conditions of live broadcasting.",
   },
   {
     icon: "🧠",
     title: "AI-Assisted Preparation",
-    desc: "Research summaries, question generation, and briefing drafts — AI tools that accelerate prep without replacing the human layer.",
+    desc: "Research summaries, question generation, and briefing drafts - AI tools that accelerate prep without replacing the human layer.",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function RedeFmPage() {
         <p className="hero-body">
           Rede.fm is built for the work that happens before you press record.
           For creators, podcasters, broadcasters, speakers, and live
-          production teams — it&apos;s the system that makes the moment of going
+          production teams - it&apos;s the system that makes the moment of going
           live feel prepared instead of improvised.
         </p>
         <div className="hero-actions">
@@ -105,7 +105,7 @@ export default function RedeFmPage() {
         <p className="section-eyebrow">Platform Features</p>
         <h2 id="features-heading" className="section-title">Built for the full production lifecycle.</h2>
         <p className="section-body">
-          Rede.fm covers the complete arc from idea to distribution — with
+          Rede.fm covers the complete arc from idea to distribution - with
           every module designed around how creators and production teams
           actually work.
         </p>

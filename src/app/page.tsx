@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "OooBooGoo Inc. — Media Systems. Creator Tools. Innovation.",
+  title: "OooBooGoo Inc. - Media Systems. Creator Tools. Innovation.",
   description:
     "OooBooGoo Inc. is an innovation-driven media and technology company building creator tools, software products, and media systems that don't fit into ordinary boxes.",
 };
@@ -43,7 +43,7 @@ export default function HomePage() {
         </p>
 
         <div className="bento-grid">
-          <div className="bento-cell bento-cell--featured" aria-label="Rede.fm — flagship product">
+          <div className="bento-cell bento-cell--featured" aria-label="Rede.fm - flagship product">
             <div>
               <div className="logo-rede-wrap" style={{ marginBottom: 20 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -52,12 +52,12 @@ export default function HomePage() {
                   <img src="/rede_web_png/rede-light.png" alt="Rede.fm" className="logo-rede" style={{ height: 36 }} />
                 </picture>
               </div>
-              <span className="bento-tag">Flagship Product — Limited Release</span>
+              <span className="bento-tag">Flagship Product - Limited Release</span>
               <h3 className="bento-name">Rede.fm</h3>
               <p className="bento-desc">
                 The preparation and production platform for creators,
                 broadcasters, podcasters, and live show hosts. Rede.fm
-                structures the work that happens before you go live — so when
+                structures the work that happens before you go live - so when
                 the moment arrives, you&apos;re ready.
               </p>
               <Link href="/rede-fm" className="bento-link">
@@ -77,7 +77,7 @@ export default function HomePage() {
           <div className="bento-cell">
             <div className="logo-shap-wrap" style={{ marginBottom: 20 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo-shap-media.PNG" alt="SHAP Media Group" className="logo-shap" style={{ height: 48 }} />
+              <img src="/SMG CREST.jpg" alt="SHAP Media Group" className="logo-shap" style={{ height: 48 }} />
             </div>
             <span className="bento-tag">Media &amp; Consulting</span>
             <h3 className="bento-name">SHAP Media Group</h3>
@@ -97,7 +97,7 @@ export default function HomePage() {
             <h3 className="bento-name">The OooBooGoo Approach</h3>
             <p className="bento-desc">
               The name was invented intentionally. No definitions, no baggage,
-              no expectations — just a blank canvas for products and
+              no expectations - just a blank canvas for products and
               experiments that don&apos;t fit neatly into existing categories.
             </p>
             <Link href="/about" className="bento-link">
@@ -121,8 +121,8 @@ export default function HomePage() {
           <p className="section-body" style={{ marginTop: 28 }}>
             Creativity, ingenuity, and a genuine desire to fix what&apos;s broken
             drive everything we build. We work at the crossover between media
-            and technology — where operational expertise meets software
-            thinking — because that&apos;s where the most interesting problems live.
+            and technology - where operational expertise meets software
+            thinking - because that&apos;s where the most interesting problems live.
           </p>
           <div style={{ marginTop: 32 }}>
             <Link href="/about" className="btn btn-ghost">Read the full story</Link>
@@ -141,8 +141,7 @@ export default function HomePage() {
             </h2>
             <p className="section-body">
               From Apple platform compatibility to publishing APIs, everything
-              we build is designed to fit into existing creative workflows —
-              not replace them.
+              we build is designed to fit into existing creative workflows -              not replace them.
             </p>
             <div style={{ marginTop: 32 }}>
               <Link href="/platform" className="btn btn-ghost">Platform overview</Link>

@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The philosophy behind OooBooGoo Inc. — why the name, the company, and the approach all exist.",
+    "The philosophy behind OooBooGoo Inc. - why the name, the company, and the approach all exist.",
 };
 
 const values = [
   {
     num: "01",
     title: "Systems thinking first",
-    body: "Every product and service we build starts with understanding the system around the problem — not just the symptom.",
+    body: "Every product and service we build starts with understanding the system around the problem - not just the symptom.",
   },
   {
     num: "02",
@@ -30,7 +30,7 @@ const values = [
   {
     num: "05",
     title: "Operational honesty",
-    body: "No vaporware. No \"coming soon\" theatre. Products ship when they're ready — and we describe them accurately until they do.",
+    body: "No vaporware. No \"coming soon\" theatre. Products ship when they're ready - and we describe them accurately until they do.",
   },
   {
     num: "06",
@@ -48,7 +48,7 @@ export default function AboutPage() {
           A name invented on purpose.
         </h1>
         <p className="hero-body">
-          The name OooBooGoo was created deliberately — with no prior
+          The name OooBooGoo was created deliberately - with no prior
           definition, no existing brand baggage, and no inherited
           expectations. That blank canvas is the point.
         </p>
@@ -71,8 +71,8 @@ export default function AboutPage() {
           <p className="section-body">
             Creativity, ingenuity, and a strange desire to fix what&apos;s broken
             drive everything we build. We operate at the crossover between
-            media and technology — where operational depth meets software
-            thinking — because that&apos;s where the most interesting, most
+            media and technology - where operational depth meets software
+            thinking - because that&apos;s where the most interesting, most
             overlooked problems live.
           </p>
           <p className="section-body" style={{ marginTop: 16 }}>
@@ -101,13 +101,13 @@ export default function AboutPage() {
             {
               name: "SHAP Media Group",
               role: "Primary operational entity",
-              desc: "The media consulting, production, and strategic communications arm. This is where the company generates revenue through direct client engagements — livestream consulting, creator coaching, podcast development, and content strategy.",
+              desc: "The media consulting, production, and strategic communications arm. This is where the company generates revenue through direct client engagements - livestream consulting, creator coaching, podcast development, and content strategy.",
               href: "/shap-media",
             },
             {
               name: "Rede.fm",
               role: "Flagship software product",
-              desc: "The creator preparation and production platform, currently in limited release. Rede.fm is the long-term software product — a SaaS system for creators, broadcasters, podcasters, and live show producers.",
+              desc: "The creator preparation and production platform, currently in limited release. Rede.fm is the long-term software product - a SaaS system for creators, broadcasters, podcasters, and live show producers.",
               href: "/rede-fm",
             },
           ].map(({ name, role, desc, href }) => (
@@ -155,7 +155,7 @@ export default function AboutPage() {
         <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 8 }}>
           {[
             ["Legal name", "OooBooGoo Inc."],
-            ["Business type", "Technology & Media Company — Software Development, Media Consulting, Creator Infrastructure"],
+            ["Business type", "Technology & Media Company - Software Development, Media Consulting, Creator Infrastructure"],
             ["Registered address", "7805 Bayview Avenue, Suite 217, Thornhill, Ontario L3T 7N1, Canada"],
             ["General inquiries", "hello@ooboogoo.com"],
           ].map(([label, value]) => (

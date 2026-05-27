@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | OooBooGoo Inc.",
   },
   description:
-    "OooBooGoo Inc. is an innovation lab and media technology company building creator tools, media systems, and software products — including SHAP Media Group and Rede.fm.",
+    "OooBooGoo Inc. is an innovation lab and media technology company building creator tools, media systems, and software products - including SHAP Media Group and Rede.fm.",
   metadataBase: new URL("https://www.ooboogoo.com"),
   openGraph: {
     siteName: "OooBooGoo Inc.",
