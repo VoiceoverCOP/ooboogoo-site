@@ -1,0 +1,44 @@
+# OooBooGoo Inc.
+
+> OooBooGoo Inc. is a Canadian innovation lab, media technology company, and creator infrastructure business. It operates two brands: SHAP Media Group (media consulting and production) and Rede.fm (a creator preparation and production SaaS platform). Headquartered in Thornhill, Ontario, Canada.
+
+## Company
+
+OooBooGoo Inc. is the umbrella entity. The name was created deliberately with no prior definition — a blank canvas for products and ideas that don't fit neatly into existing categories. The company operates at the intersection of media and technology, combining operational consulting expertise with software development.
+
+- [About OooBooGoo](https://www.ooboogoo.com/about): Company philosophy, founding story, values, operating structure, and legal details.
+- [Contact](https://www.ooboogoo.com/contact): Business inquiries, partnerships, press, and support contacts.
+
+## SHAP Media Group
+
+SHAP Media Group is the media consulting, production, and strategic communications arm of OooBooGoo Inc. Founded by Sean Shapiro, a former police officer and media relations specialist with over 20 years in public service and strategic communication. Sean built his reputation transforming how the Toronto Police connected with the public online.
+
+Services: livestream consulting, creator coaching, podcast and broadcast development, social media systems, strategic communications, content strategy, production direction, drone photography and videography, voiceover and on-air presenting, on-air personality and hosting, media systems audits.
+
+Clients: independent creators, business owners, entrepreneurs, media organisations, brands, speakers, and thought leaders across North America.
+
+- [SHAP Media Group](https://www.ooboogoo.com/shap-media): Full service list, founder background, and engagement process.
+- Contact: info@shapmediagroup.com | (416) 222-0157
+- Also accessible via: shapmediagroup.com | shapmediagroup.ca
+
+Related ventures:
+- Better Traffic (bettertraffic.ca): Not-for-profit traffic safety education
+- Ask A Traffic Cop (askatrafficcop.ca): Livestream show on traffic safety
+
+## Rede.fm
+
+Rede.fm is a preparation and production platform for creators, broadcasters, podcasters, and live show hosts. Currently in limited release. Covers the full production lifecycle: show planning, guest management, media kits, audience intake, publishing workflows, collaborative preparation, live show structure, and AI-assisted preparation.
+
+Designed with Apple ecosystem compatibility, API-first architecture, and planned iOS and Android mobile apps.
+
+- [Rede.fm](https://www.ooboogoo.com/rede-fm): Platform overview, features, and access request.
+- [Platform](https://www.ooboogoo.com/platform): Technical integrations, Apple ecosystem support, and developer API information.
+
+## Legal & Contact
+
+- Address: 7805 Bayview Avenue, Suite 217, Thornhill, Ontario L3T 7N1, Canada
+- General: hello@ooboogoo.com
+- SHAP Media: info@shapmediagroup.com | (416) 222-0157
+- [Privacy Policy](https://www.ooboogoo.com/privacy)
+- [Terms of Service](https://www.ooboogoo.com/terms)
+- [Support](https://www.ooboogoo.com/support)
