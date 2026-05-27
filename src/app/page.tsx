@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "OooBooGoo Inc. — Software for macOS and iOS",
+  title: "OooBooGoo Inc. — Media Systems. Creator Tools. Innovation.",
   description:
-    "OooBooGoo Inc. builds thoughtful software for macOS and iOS — productivity tools and utilities designed around how people actually work.",
+    "OooBooGoo Inc. is an innovation-driven media and technology company building creator tools, software products, and media systems that don't fit into ordinary boxes.",
 };
 
 export default function HomePage() {
@@ -14,19 +14,83 @@ export default function HomePage() {
         <div className="hero">
           <p className="hero-eyebrow">OooBooGoo Inc.</p>
           <h1 id="hero-heading" className="hero-title">
-            Software built around real workflows.
+            Building media systems and creator tools that don't fit into ordinary boxes.
           </h1>
           <p className="hero-body">
-            We design and develop software for macOS and iOS that removes
-            friction from everyday work. Every product we ship starts with a
-            genuine problem and ends with a clear, focused solution.
+            We are an innovation lab, media group, and creator platform company
+            operating at the intersection of technology, creativity, and
+            systems thinking. When existing categories don&apos;t work, we build
+            new ones.
           </p>
           <div className="hero-actions">
-            <Link href="/products" className="btn btn-primary">
-              View Our Products
+            <Link href="/rede-fm" className="btn btn-primary">Explore Rede.fm</Link>
+            <Link href="/about" className="btn btn-ghost">Our Story</Link>
+          </div>
+        </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="brands-heading" className="section">
+        <p className="section-eyebrow">What We Build</p>
+        <h2 id="brands-heading" className="section-title">
+          Two operating entities. One innovation identity.
+        </h2>
+        <p className="section-body">
+          OooBooGoo is the umbrella. Inside it: a media consultancy with real
+          operational depth, and a software platform redefining how creators
+          prepare and produce.
+        </p>
+
+        <div className="bento-grid">
+          <div className="bento-cell bento-cell--featured" aria-label="Rede.fm — flagship product">
+            <div>
+              <span className="bento-tag">Flagship Product — Limited Release</span>
+              <h3 className="bento-name">Rede.fm</h3>
+              <p className="bento-desc">
+                The preparation and production platform for creators,
+                broadcasters, podcasters, and live show hosts. Rede.fm
+                structures the work that happens before you go live — so when
+                the moment arrives, you&apos;re ready.
+              </p>
+              <Link href="/rede-fm" className="bento-link">
+                Request access <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <ul className="bento-feature-list" aria-label="Rede.fm features">
+              <li>Show planning &amp; scheduling</li>
+              <li>Guest management &amp; media kits</li>
+              <li>Collaborative preparation workflows</li>
+              <li>Creator profiles &amp; audience intake</li>
+              <li>Live show structure &amp; run-of-show</li>
+              <li>Publishing &amp; distribution workflows</li>
+            </ul>
+          </div>
+
+          <div className="bento-cell">
+            <span className="bento-tag">Media &amp; Consulting</span>
+            <h3 className="bento-name">SHAP Media Group</h3>
+            <p className="bento-desc">
+              Our media consulting and production arm. Strategic communications,
+              livestream systems, creator coaching, podcast development, and
+              content strategy for creators and brands who want to build
+              something lasting.
+            </p>
+            <Link href="/shap-media" className="bento-link">
+              Explore services <span aria-hidden="true">→</span>
             </Link>
-            <Link href="/about" className="btn btn-ghost">
-              About the Company
+          </div>
+
+          <div className="bento-cell">
+            <span className="bento-tag">Innovation Lab</span>
+            <h3 className="bento-name">The OooBooGoo Approach</h3>
+            <p className="bento-desc">
+              The name was invented intentionally. No definitions, no baggage,
+              no expectations — just a blank canvas for products and
+              experiments that don&apos;t fit neatly into existing categories.
+            </p>
+            <Link href="/about" className="bento-link">
+              Our philosophy <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
@@ -34,66 +98,69 @@ export default function HomePage() {
 
       <hr className="section-divider" />
 
-      <section aria-labelledby="what-we-do-heading" className="section">
-        <p className="section-eyebrow">What We Do</p>
-        <h2 id="what-we-do-heading" className="section-title">
-          Independent software, thoughtfully made.
-        </h2>
-        <p className="section-body">
-          OooBooGoo Inc. is an independent software company headquartered in
-          San Francisco, CA. We build focused, high-quality apps for Apple
-          platforms — each one designed to do one thing exceptionally well.
-        </p>
-
-        <div className="stat-row">
-          <div className="stat-item">
-            <p className="stat-num">3+</p>
-            <p className="stat-label">Apps published</p>
-          </div>
-          <div className="stat-item">
-            <p className="stat-num">10k+</p>
-            <p className="stat-label">Users worldwide</p>
-          </div>
-          <div className="stat-item">
-            <p className="stat-num">100%</p>
-            <p className="stat-label">Indie, no outside funding</p>
+      <section aria-labelledby="philosophy-heading" className="section">
+        <p className="section-eyebrow">Why We Exist</p>
+        <div style={{ maxWidth: 760 }}>
+          <blockquote className="pull-quote" aria-labelledby="philosophy-heading">
+            <h2 id="philosophy-heading" className="pull-quote-text">
+              &ldquo;OooBooGoo exists because we believe there are problems no one
+              else is thinking about solving.&rdquo;
+            </h2>
+          </blockquote>
+          <p className="section-body" style={{ marginTop: 28 }}>
+            Creativity, ingenuity, and a genuine desire to fix what&apos;s broken
+            drive everything we build. We work at the crossover between media
+            and technology — where operational expertise meets software
+            thinking — because that&apos;s where the most interesting problems live.
+          </p>
+          <div style={{ marginTop: 32 }}>
+            <Link href="/about" className="btn btn-ghost">Read the full story</Link>
           </div>
         </div>
       </section>
 
       <hr className="section-divider" />
 
-      <section aria-labelledby="products-preview-heading" className="section">
-        <p className="section-eyebrow">Our Software</p>
-        <h2 id="products-preview-heading" className="section-title">
-          Tools we&apos;ve shipped.
-        </h2>
-        <p className="section-body">
-          From quick-capture utilities to structured project tools, everything
-          we build lives natively on Apple&apos;s platforms.
-        </p>
-        <div style={{ marginTop: 32 }}>
-          <Link href="/products" className="btn btn-ghost">
-            See All Products &rarr;
-          </Link>
-        </div>
-      </section>
-
-      <hr className="section-divider" />
-
-      <section aria-labelledby="cta-heading" className="section">
-        <p className="section-eyebrow">Get in Touch</p>
-        <h2 id="cta-heading" className="section-title">
-          Questions? We&apos;d love to hear from you.
-        </h2>
-        <p className="section-body">
-          Whether you have feedback on our apps, a press inquiry, or a support
-          question — we read every message.
-        </p>
-        <div style={{ marginTop: 32 }}>
-          <Link href="/contact" className="btn btn-primary">
-            Contact Us
-          </Link>
+      <section aria-labelledby="platform-cta-heading" className="section">
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }}>
+          <div>
+            <p className="section-eyebrow">Built for the Ecosystem</p>
+            <h2 id="platform-cta-heading" className="section-title">
+              Designed to integrate with the tools creators already use.
+            </h2>
+            <p className="section-body">
+              From Apple platform compatibility to publishing APIs, everything
+              we build is designed to fit into existing creative workflows —
+              not replace them.
+            </p>
+            <div style={{ marginTop: 32 }}>
+              <Link href="/platform" className="btn btn-ghost">Platform overview</Link>
+            </div>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {[
+              "Apple ecosystem compatibility",
+              "Calendar & notification integration",
+              "Podcast & broadcast publishing",
+              "API-first architecture",
+              "AI-assisted preparation workflows",
+            ].map((item) => (
+              <div
+                key={item}
+                style={{
+                  padding: "14px 18px",
+                  border: "1px solid var(--color-border)",
+                  borderRadius: 9,
+                  background: "var(--color-surface)",
+                  fontSize: "0.9rem",
+                  color: "var(--color-text)",
+                  fontWeight: 500,
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

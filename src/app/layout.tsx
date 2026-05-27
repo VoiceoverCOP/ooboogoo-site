@@ -9,6 +9,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | OooBooGoo Inc.",
   },
   description:
-    "OooBooGoo Inc. develops thoughtful software for macOS and iOS — tools built for productivity, creativity, and clarity.",
+    "OooBooGoo Inc. is an innovation lab and media technology company building creator tools, media systems, and software products — including SHAP Media Group and Rede.fm.",
   metadataBase: new URL("https://www.ooboogoo.com"),
   openGraph: {
     siteName: "OooBooGoo Inc.",
@@ -26,11 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
       <body>

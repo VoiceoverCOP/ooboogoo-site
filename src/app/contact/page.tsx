@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with OooBooGoo Inc. — support, press, and general inquiries.",
+    "Get in touch with OooBooGoo Inc. — business inquiries, partnerships, media, and support.",
 };
 
 export default function ContactPage() {
@@ -15,101 +15,85 @@ export default function ContactPage() {
           We read every message.
         </h1>
         <p className="hero-body">
-          Whether it&apos;s a support question, a feature request, or a press
-          inquiry — reach out and we&apos;ll get back to you within one business
-          day.
+          Whether it&apos;s a business inquiry, a consulting engagement, a
+          partnership proposal, or a product question — reach out and
+          we&apos;ll respond within one business day.
         </p>
       </section>
 
       <hr className="section-divider" />
 
       <section aria-labelledby="contact-details-heading" className="section">
-        <h2 id="contact-details-heading" className="section-title">
-          Contact details.
-        </h2>
+        <h2 id="contact-details-heading" className="section-title">Contact details.</h2>
         <div className="contact-grid">
           <div>
-            <div className="contact-info-item">
-              <p className="contact-info-label">General &amp; Support</p>
-              <p className="contact-info-value">
-                <a href="mailto:hello@ooboogoo.com" style={{ color: "var(--color-accent)" }}>
-                  hello@ooboogoo.com
-                </a>
-              </p>
-            </div>
-            <div className="contact-info-item">
-              <p className="contact-info-label">Press &amp; Media</p>
-              <p className="contact-info-value">
-                <a href="mailto:press@ooboogoo.com" style={{ color: "var(--color-accent)" }}>
-                  press@ooboogoo.com
-                </a>
-              </p>
-            </div>
+            {[
+              {
+                label: "General & Business Inquiries",
+                value: "sales@ooboogoo.com",
+                href: "mailto:sales@ooboogoo.com",
+              },
+              {
+                label: "Product Support (Rede.fm)",
+                value: "support@ooboogoo.com",
+                href: "mailto:support@ooboogoo.com",
+              },
+              {
+                label: "Press & Media",
+                value: "media@ooboogoo.com",
+                href: "mailto:media@ooboogoo.com",
+              },
+              {
+                label: "Partnerships",
+                value: "sales@ooboogoo.com",
+                href: "mailto:sales@ooboogoo.com",
+              },
+            ].map(({ label, value, href }) => (
+              <div key={label} className="contact-info-item">
+                <p className="contact-info-label">{label}</p>
+                <p className="contact-info-value">
+                  <a href={href} style={{ color: "var(--color-accent)" }}>{value}</a>
+                </p>
+              </div>
+            ))}
             <div className="contact-info-item">
               <p className="contact-info-label">Mailing Address</p>
               <p className="contact-info-value" style={{ lineHeight: 1.8 }}>
                 OooBooGoo Inc.<br />
-                548 Market St, PMB 12345<br />
-                San Francisco, CA 94104<br />
-                United States
+                7805 Bayview Avenue, Suite 217<br />
+                Thornhill, Ontario L3T 7N1<br />
+                Canada
               </p>
             </div>
             <div className="contact-info-item">
-              <p className="contact-info-label">Response time</p>
+              <p className="contact-info-label">Response Time</p>
               <p className="contact-info-value">Within 1 business day</p>
             </div>
           </div>
 
-          <form
-            action="mailto:hello@ooboogoo.com"
-            method="get"
-            encType="text/plain"
-            aria-label="Contact form"
-          >
+          <form action="mailto:sales@ooboogoo.com" method="get" encType="text/plain" aria-label="Contact form">
             <div className="form-group">
               <label htmlFor="name" className="form-label">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                autoComplete="name"
-                placeholder="Jane Smith"
-                className="form-input"
-              />
+              <input id="name" name="name" type="text" required autoComplete="name" placeholder="Your name" className="form-input" />
             </div>
             <div className="form-group">
               <label htmlFor="email" className="form-label">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                autoComplete="email"
-                placeholder="jane@example.com"
-                className="form-input"
-              />
+              <input id="email" name="email" type="email" required autoComplete="email" placeholder="you@example.com" className="form-input" />
             </div>
             <div className="form-group">
-              <label htmlFor="subject" className="form-label">Subject</label>
-              <input
-                id="subject"
-                name="subject"
-                type="text"
-                required
-                placeholder="Support request / general question"
-                className="form-input"
-              />
+              <label htmlFor="inquiry" className="form-label">Inquiry type</label>
+              <select id="inquiry" name="subject" className="form-select">
+                <option>Business inquiry</option>
+                <option>SHAP Media consulting</option>
+                <option>Rede.fm — product question</option>
+                <option>Partnership proposal</option>
+                <option>Press / media request</option>
+                <option>General question</option>
+              </select>
             </div>
             <div className="form-group">
               <label htmlFor="message" className="form-label">Message</label>
-              <textarea
-                id="message"
-                name="body"
-                required
-                placeholder="Tell us what's on your mind…"
-                className="form-textarea"
-              />
+              <textarea id="message" name="body" required placeholder="Tell us about your situation…" className="form-textarea" />
             </div>
             <button type="submit" className="btn btn-primary" style={{ width: "100%" }}>
               Send Message

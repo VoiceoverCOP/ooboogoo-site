@@ -2,24 +2,19 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for OooBooGoo Inc. and its apps.",
+  description: "Privacy Policy for OooBooGoo Inc. and its products, including Rede.fm.",
 };
 
 const EFFECTIVE_DATE = "May 27, 2025";
-const COMPANY = "OooBooGoo Inc.";
-const EMAIL = "hello@ooboogoo.com";
+const EMAIL = "support@ooboogoo.com";
 
 export default function PrivacyPage() {
   return (
     <>
       <section aria-labelledby="privacy-heading" className="hero">
         <p className="hero-eyebrow">Legal</p>
-        <h1 id="privacy-heading" className="hero-title">
-          Privacy Policy
-        </h1>
-        <p className="hero-body">
-          Effective date: {EFFECTIVE_DATE}
-        </p>
+        <h1 id="privacy-heading" className="hero-title">Privacy Policy</h1>
+        <p className="hero-body">Effective date: {EFFECTIVE_DATE}</p>
       </section>
 
       <hr className="section-divider" />
@@ -27,126 +22,162 @@ export default function PrivacyPage() {
       <section className="section">
         <div className="prose">
           <p>
-            {COMPANY} (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the apps and
-            website available at ooboogoo.com (collectively, the
-            &ldquo;Services&rdquo;). This Privacy Policy explains what information we
-            collect, how we use it, and the choices you have.
+            OooBooGoo Inc. (&ldquo;OooBooGoo&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;)
+            operates the Rede.fm platform, the ooboogoo.com website, and any
+            associated mobile or desktop applications (collectively, the
+            &ldquo;Services&rdquo;). This Privacy Policy explains what personal
+            information we collect, how we use it, and your rights as a user.
           </p>
           <p>
-            By using any of our Services, you agree to the collection and use of
-            information in accordance with this policy. If you do not agree,
-            please discontinue use of our Services.
+            OooBooGoo Inc. is incorporated in Ontario, Canada and subject to
+            the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA)
+            and applicable provincial privacy legislation.
           </p>
 
           <h2>1. Information We Collect</h2>
-          <h3>1.1 Information you provide</h3>
-          <p>
-            We collect information you give us directly, such as:
-          </p>
+          <h3>1.1 Account information</h3>
+          <p>When you create an account or join a waitlist, we may collect:</p>
           <ul>
-            <li>Name and email address when you contact us</li>
-            <li>Messages and attachments you send to our support team</li>
+            <li>Name and email address</li>
+            <li>Occupation or creator category (optional, helps us improve the product)</li>
+            <li>Authentication credentials (stored as secure hashes)</li>
           </ul>
 
-          <h3>1.2 Information collected automatically</h3>
+          <h3>1.2 Creator and production data</h3>
           <p>
-            Our apps do not collect telemetry or usage analytics by default. Where
-            optional crash reporting is offered, it is explicitly opt-in. If
-            enabled, crash reports may include:
-          </p>
-          <ul>
-            <li>Device model and operating system version</li>
-            <li>App version and build number</li>
-            <li>Stack trace at the time of the crash</li>
-          </ul>
-          <p>
-            No personally identifiable information is included in crash reports.
+            When using Rede.fm, you may create show plans, guest records,
+            media kits, run-of-show documents, and other production content.
+            This data belongs to you. We store it to provide the service and
+            do not use it for any purpose beyond operating the platform.
           </p>
 
-          <h3>1.3 Purchase information</h3>
+          <h3>1.3 Usage and analytics</h3>
           <p>
-            All purchases are processed by Apple through the App Store. We do not
-            receive or store your payment card details. We may receive a
-            transaction receipt from Apple to verify a purchase.
+            We collect anonymised usage data to understand how the platform
+            is used and to improve it. This does not include personally
+            identifiable information. Where third-party analytics are used,
+            they are configured to respect Do Not Track preferences and
+            exclude personal identifiers.
+          </p>
+
+          <h3>1.4 Communications</h3>
+          <p>
+            When you contact us, we retain the content of your message,
+            your email address, and related correspondence to provide support
+            and maintain service continuity.
+          </p>
+
+          <h3>1.5 Device and session data</h3>
+          <p>
+            We may collect standard server log data including IP addresses,
+            browser type, and session duration for security and fraud
+            prevention purposes. This data is not linked to individual user
+            profiles.
+          </p>
+
+          <h3>1.6 Payments</h3>
+          <p>
+            All subscription payments are processed through trusted third-party
+            payment processors. We do not store payment card details. We
+            receive transaction confirmation records sufficient to manage
+            billing.
           </p>
 
           <h2>2. How We Use Your Information</h2>
-          <p>We use the information we collect to:</p>
+          <p>We use collected information to:</p>
           <ul>
-            <li>Respond to your support requests and inquiries</li>
-            <li>Diagnose and fix software bugs</li>
-            <li>Improve our products</li>
+            <li>Provide and operate the Services</li>
+            <li>Respond to support requests and inquiries</li>
+            <li>Send transactional communications (account confirmation, password reset, billing)</li>
+            <li>Notify waitlist participants of access availability</li>
+            <li>Diagnose and resolve technical issues</li>
+            <li>Improve and develop the platform</li>
             <li>Comply with legal obligations</li>
           </ul>
           <p>
-            We do not sell, rent, or share your personal information with third
-            parties for their marketing purposes.
+            We do not use your data for advertising. We do not sell, rent,
+            or share personal information with third parties for their
+            commercial purposes.
           </p>
 
-          <h2>3. Data Retention</h2>
+          <h2>3. Consent</h2>
           <p>
-            We retain your contact information only as long as necessary to resolve
-            your inquiry or as required by law. Crash report data is anonymised and
-            retained for up to 90 days.
+            By using our Services, you consent to the collection and use of
+            information as described in this policy. Where required by law,
+            we obtain explicit consent before collecting sensitive categories
+            of information. You may withdraw consent at any time by contacting
+            us, subject to legal and contractual restrictions.
           </p>
 
-          <h2>4. Third-Party Services</h2>
+          <h2>4. Data Retention</h2>
           <p>
-            Our apps are distributed through Apple&apos;s App Store and Mac App
-            Store. Apple&apos;s privacy practices are governed by{" "}
-            <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">
-              Apple&apos;s Privacy Policy
-            </a>
-            . We are not responsible for third-party services you may access
-            through links in our apps.
+            We retain account data for as long as your account is active or
+            as needed to provide services. Creator and production data is
+            retained according to your account settings; upon account deletion,
+            it is removed within 30 days. Support communications are retained
+            for up to 3 years.
           </p>
 
-          <h2>5. Children&apos;s Privacy</h2>
+          <h2>5. Third-Party Services</h2>
           <p>
-            Our Services are not directed at children under the age of 13. We do
-            not knowingly collect personal information from children under 13. If
-            you become aware that a child has provided us with personal information,
-            please contact us so we can delete it.
+            Our software is distributed through Apple&apos;s App Store and Mac App
+            Store. Rede.fm may integrate with third-party publishing and
+            scheduling platforms at your direction. We are responsible only
+            for our own handling of data, not for the practices of third-party
+            services you choose to connect.
           </p>
 
           <h2>6. Security</h2>
           <p>
-            We implement commercially reasonable technical and organisational
-            measures to protect your personal information. No method of electronic
-            storage or transmission is 100% secure, and we cannot guarantee absolute
-            security.
+            We implement reasonable technical and organisational safeguards
+            appropriate to the sensitivity of the data we hold, including
+            encryption in transit and at rest, access controls, and regular
+            security reviews. No system is immune to all risks; we notify
+            affected users promptly of any confirmed breach.
           </p>
 
-          <h2>7. Your Rights</h2>
+          <h2>7. Children&apos;s Privacy</h2>
           <p>
-            Depending on where you reside, you may have the right to access,
-            correct, or delete the personal information we hold about you. To
-            exercise these rights, please contact us at{" "}
-            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.
-          </p>
-          <p>
-            California residents may have additional rights under the California
-            Consumer Privacy Act (CCPA). We do not sell personal information.
+            Our Services are not intended for individuals under the age of 13.
+            We do not knowingly collect personal information from children.
+            If we become aware that a child has provided information, we will
+            delete it promptly.
           </p>
 
-          <h2>8. Changes to This Policy</h2>
+          <h2>8. Your Rights</h2>
+          <p>Under PIPEDA and applicable law, you have the right to:</p>
+          <ul>
+            <li>Access the personal information we hold about you</li>
+            <li>Request correction of inaccurate or incomplete information</li>
+            <li>Request deletion of your personal information</li>
+            <li>Withdraw consent to certain processing activities</li>
+            <li>File a complaint with the Office of the Privacy Commissioner of Canada</li>
+          </ul>
+          <p>To exercise these rights, contact us at <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. We will respond within 30 days.</p>
+
+          <h2>9. Cross-Border Data Transfers</h2>
           <p>
-            We may update this Privacy Policy from time to time. We will notify
-            you of significant changes by updating the effective date at the top
-            of this page. Continued use of our Services after a change constitutes
-            your acceptance of the updated policy.
+            OooBooGoo Inc. is based in Canada. Our infrastructure may use
+            servers located in Canada or the United States. Where data is
+            transferred outside Canada, we take reasonable steps to ensure
+            it receives equivalent protection.
           </p>
 
-          <h2>9. Contact Us</h2>
+          <h2>10. Changes to This Policy</h2>
           <p>
-            Questions about this Privacy Policy? Contact us:
+            We will notify users of material changes to this policy by
+            updating the effective date and, where appropriate, by email.
+            Continued use of the Services after a change constitutes
+            acceptance of the updated policy.
+          </p>
+
+          <h2>11. Contact</h2>
+          <p>
+            Privacy inquiries and access requests:
           </p>
           <ul>
             <li>Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
-            <li>
-              Mail: OooBooGoo Inc., 548 Market St, PMB 12345, San Francisco, CA
-              94104, United States
-            </li>
+            <li>Mail: OooBooGoo Inc., 7805 Bayview Avenue, Suite 217, Thornhill, Ontario L3T 7N1, Canada</li>
           </ul>
         </div>
       </section>

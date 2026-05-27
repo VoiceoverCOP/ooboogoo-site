@@ -1,24 +1,51 @@
 import Link from "next/link";
 
+const year = new Date().getFullYear();
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <div className="footer-brand">
+        <div>
           <span className="footer-logo">OooBooGoo</span>
-          <p className="footer-tagline">Software that works for you.</p>
+          <p className="footer-tagline">
+            An innovation lab, media group, and creator platform company — building systems for what comes next.
+          </p>
+          <address className="footer-address" style={{ fontStyle: "normal" }}>
+            OooBooGoo Inc.<br />
+            7805 Bayview Avenue, Suite 217<br />
+            Thornhill, Ontario L3T 7N1<br />
+            Canada
+          </address>
         </div>
-        <nav aria-label="Footer navigation" className="footer-links">
-          <Link href="/about" className="footer-link">About</Link>
-          <Link href="/products" className="footer-link">Products</Link>
-          <Link href="/contact" className="footer-link">Contact</Link>
-          <Link href="/privacy" className="footer-link">Privacy Policy</Link>
-          <Link href="/terms" className="footer-link">Terms of Service</Link>
-        </nav>
+
+        <div>
+          <p className="footer-col-title">Company</p>
+          <nav aria-label="Footer navigation" className="footer-links">
+            <Link href="/about" className="footer-link">About</Link>
+            <Link href="/shap-media" className="footer-link">SHAP Media Group</Link>
+            <Link href="/rede-fm" className="footer-link">Rede.fm</Link>
+            <Link href="/platform" className="footer-link">Platform</Link>
+            <Link href="/contact" className="footer-link">Contact</Link>
+          </nav>
+        </div>
+
+        <div>
+          <p className="footer-col-title">Legal &amp; Support</p>
+          <nav aria-label="Legal and support navigation" className="footer-links">
+            <Link href="/support" className="footer-link">Support</Link>
+            <Link href="/privacy" className="footer-link">Privacy Policy</Link>
+            <Link href="/terms" className="footer-link">Terms of Service</Link>
+            <a href="mailto:sales@ooboogoo.com" className="footer-link">sales@ooboogoo.com</a>
+          </nav>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p className="footer-copy">&copy; {year} OooBooGoo Inc. All rights reserved.</p>
         <p className="footer-copy">
-          &copy; {new Date().getFullYear()} OooBooGoo Inc. All rights reserved.
-          <br />
-          <span style={{ fontSize: "0.8125rem" }}>hello@ooboogoo.com</span>
+          <Link href="/privacy" style={{ marginRight: 16 }} className="footer-link">Privacy</Link>
+          <Link href="/terms" className="footer-link">Terms</Link>
         </p>
       </div>
     </footer>
