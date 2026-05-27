@@ -36,7 +36,7 @@ export default function Footer() {
             <Link href="/support" className="footer-link">Support</Link>
             <Link href="/privacy" className="footer-link">Privacy Policy</Link>
             <Link href="/terms" className="footer-link">Terms of Service</Link>
-            <a href="mailto:sales@ooboogoo.com" className="footer-link">sales@ooboogoo.com</a>
+            <a href="mailto:hello@ooboogoo.com" className="footer-link">hello@ooboogoo.com</a>
           </nav>
         </div>
       </div>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const EFFECTIVE_DATE = "May 27, 2025";
-const EMAIL = "sales@ooboogoo.com";
+const EMAIL = "hello@ooboogoo.com";
 
 export default function TermsPage() {
   return (

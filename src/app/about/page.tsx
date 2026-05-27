@@ -157,7 +157,7 @@ export default function AboutPage() {
             ["Legal name", "OooBooGoo Inc."],
             ["Business type", "Technology & Media Company — Software Development, Media Consulting, Creator Infrastructure"],
             ["Registered address", "7805 Bayview Avenue, Suite 217, Thornhill, Ontario L3T 7N1, Canada"],
-            ["General inquiries", "sales@ooboogoo.com"],
+            ["General inquiries", "hello@ooboogoo.com"],
           ].map(([label, value]) => (
             <div key={label} className="contact-info-item">
               <p className="contact-info-label">{label}</p>

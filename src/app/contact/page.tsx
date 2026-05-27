@@ -30,8 +30,8 @@ export default function ContactPage() {
             {[
               {
                 label: "General & Business Inquiries",
-                value: "sales@ooboogoo.com",
-                href: "mailto:sales@ooboogoo.com",
+                value: "hello@ooboogoo.com",
+                href: "mailto:hello@ooboogoo.com",
               },
               {
                 label: "Product Support (Rede.fm)",
@@ -45,8 +45,8 @@ export default function ContactPage() {
               },
               {
                 label: "Partnerships",
-                value: "sales@ooboogoo.com",
-                href: "mailto:sales@ooboogoo.com",
+                value: "hello@ooboogoo.com",
+                href: "mailto:hello@ooboogoo.com",
               },
             ].map(({ label, value, href }) => (
               <div key={label} className="contact-info-item">
@@ -71,7 +71,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <form action="mailto:sales@ooboogoo.com" method="get" encType="text/plain" aria-label="Contact form">
+          <form action="mailto:hello@ooboogoo.com" method="get" encType="text/plain" aria-label="Contact form">
             <div className="form-group">
               <label htmlFor="name" className="form-label">Name</label>
               <input id="name" name="name" type="text" required autoComplete="name" placeholder="Your name" className="form-input" />

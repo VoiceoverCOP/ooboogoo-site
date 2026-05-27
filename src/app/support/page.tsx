@@ -17,7 +17,7 @@ const faqSections = [
       },
       {
         q: "How do I get in touch?",
-        a: "For general and business inquiries, email sales@ooboogoo.com. For product support, email support@ooboogoo.com. For press and media requests, email media@ooboogoo.com. We respond within one business day.",
+        a: "For general and business inquiries, email hello@ooboogoo.com. For product support, email support@ooboogoo.com. For press and media requests, email media@ooboogoo.com. We respond within one business day.",
       },
       {
         q: "Where is OooBooGoo Inc. based?",
@@ -55,7 +55,7 @@ const faqSections = [
     items: [
       {
         q: "How do I engage SHAP Media Group for consulting?",
-        a: "All SHAP Media engagements begin with a discovery conversation. Use the Contact page to send a message selecting 'SHAP Media consulting' as the inquiry type, or email sales@ooboogoo.com directly.",
+        a: "All SHAP Media engagements begin with a discovery conversation. Use the Contact page to send a message selecting 'SHAP Media consulting' as the inquiry type, or email hello@ooboogoo.com directly.",
       },
       {
         q: "What kinds of projects does SHAP Media take on?",
@@ -95,7 +95,7 @@ export default function SupportPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16, marginTop: 36 }}>
           {[
             { label: "Product Support", email: "support@ooboogoo.com", desc: "Rede.fm account issues, technical problems, feature questions." },
-            { label: "Business Inquiries", email: "sales@ooboogoo.com", desc: "Consulting engagements, partnerships, commercial proposals." },
+            { label: "Business Inquiries", email: "hello@ooboogoo.com", desc: "Consulting engagements, partnerships, commercial proposals." },
             { label: "Press & Media", email: "media@ooboogoo.com", desc: "Interviews, press coverage, company information requests." },
           ].map(({ label, email, desc }) => (
             <div key={label} style={{ padding: "24px", border: "1px solid var(--color-border)", borderRadius: 12, background: "var(--color-surface)" }}>

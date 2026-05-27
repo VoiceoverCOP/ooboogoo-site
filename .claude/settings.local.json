@@ -12,7 +12,10 @@
       "Bash(git -C /Users/aatc/code/ooboogoo-site add src/app/globals.css src/app/site.css src/app/layout.tsx src/app/page.tsx src/app/about/ src/app/contact/ src/app/privacy/ src/app/products/ src/app/terms/ src/components/ .claude/launch.json)",
       "Bash(git -C /Users/aatc/code/ooboogoo-site commit -m ' *)",
       "Bash(git -C /Users/aatc/code/ooboogoo-site add -A)",
-      "Bash(git -C /Users/aatc/code/ooboogoo-site status --short)"
+      "Bash(git -C /Users/aatc/code/ooboogoo-site status --short)",
+      "Bash(xargs sed -i '' 's/sales@ooboogoo\\\\.com/hello@ooboogoo.com/g')",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site diff --stat)",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site commit -am \"fix: replace sales@ with hello@ooboogoo.com across all pages\")"
     ]
   }
 }
