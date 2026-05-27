@@ -55,7 +55,19 @@ export default function RedeFmPage() {
   return (
     <>
       <section aria-labelledby="rede-heading" className="hero">
-        <p className="hero-eyebrow">Rede.fm — Limited Release</p>
+        <div className="logo-rede-wrap" style={{ marginBottom: 28 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <picture>
+            <source srcSet="/rede_web_png/Rede_fm_DARK.png" media="(prefers-color-scheme: dark)" />
+            <img
+              src="/rede_web_png/rede-light.png"
+              alt="Rede.fm"
+              className="logo-rede"
+              style={{ height: 52 }}
+            />
+          </picture>
+        </div>
+        <p className="hero-eyebrow">Limited Release</p>
         <h1 id="rede-heading" className="hero-title">
           The preparation platform for people who go live.
         </h1>

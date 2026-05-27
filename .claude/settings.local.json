@@ -15,7 +15,16 @@
       "Bash(git -C /Users/aatc/code/ooboogoo-site status --short)",
       "Bash(xargs sed -i '' 's/sales@ooboogoo\\\\.com/hello@ooboogoo.com/g')",
       "Bash(git -C /Users/aatc/code/ooboogoo-site diff --stat)",
-      "Bash(git -C /Users/aatc/code/ooboogoo-site commit -am \"fix: replace sales@ with hello@ooboogoo.com across all pages\")"
+      "Bash(git -C /Users/aatc/code/ooboogoo-site commit -am \"fix: replace sales@ with hello@ooboogoo.com across all pages\")",
+      "Bash(gh --version)",
+      "Bash(vercel --version)",
+      "Bash(npm install *)",
+      "Bash(brew install *)",
+      "Bash(wait)",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site remote add origin https://github.com/VoiceoverCOP/ooboogoo-site.git)",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site push -u origin main)",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site commit -m \"feat: wire brand logos into nav, footer, and all brand pages\")",
+      "Bash(git -C /Users/aatc/code/ooboogoo-site push)"
     ]
   }
 }

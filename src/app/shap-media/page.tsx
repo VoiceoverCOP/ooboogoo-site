@@ -46,6 +46,15 @@ export default function ShapMediaPage() {
   return (
     <>
       <section aria-labelledby="shap-heading" className="hero">
+        <div className="logo-shap-wrap" style={{ marginBottom: 28 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-shap-media.PNG"
+            alt="SHAP Media Group"
+            className="logo-shap"
+            style={{ height: 64 }}
+          />
+        </div>
         <p className="hero-eyebrow">SHAP Media Group</p>
         <h1 id="shap-heading" className="hero-title">
           Operational media expertise for creators who are building something real.

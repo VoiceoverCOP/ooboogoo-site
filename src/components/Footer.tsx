@@ -7,7 +7,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div>
-          <span className="footer-logo">OooBooGoo</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-ooboogoo.png"
+            alt="OooBooGoo"
+            className="logo-ooboogoo"
+            style={{ height: 36, marginBottom: 14 }}
+          />
           <p className="footer-tagline">
             An innovation lab, media group, and creator platform company — building systems for what comes next.
           </p>

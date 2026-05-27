@@ -614,3 +614,53 @@
 /* ─── Utility ───────────────────────────────────────── */
 .text-accent { color: var(--color-accent); }
 .text-muted { color: var(--color-text-muted); }
+
+/* ─── Logo handling ─────────────────────────────────── */
+
+/* OooBooGoo: monochrome black-on-white — multiply removes bg in light,
+   invert flips to white-on-dark in dark mode */
+.logo-ooboogoo {
+  display: block;
+  width: auto;
+  mix-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+  .logo-ooboogoo {
+    mix-blend-mode: normal;
+    filter: invert(1);
+  }
+}
+
+/* Rede.fm: has red — can't invert. multiply in light, white pill in dark */
+.logo-rede {
+  display: block;
+  width: auto;
+  mix-blend-mode: multiply;
+}
+.logo-rede-wrap {}
+@media (prefers-color-scheme: dark) {
+  .logo-rede {
+    mix-blend-mode: normal;
+  }
+  .logo-rede-wrap {
+    background: rgb(255 255 255 / 0.96);
+    border-radius: 8px;
+    padding: 6px 14px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* SHAP Media: metallic — always on white surface */
+.logo-shap-wrap {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+.logo-shap {
+  display: block;
+  width: auto;
+}

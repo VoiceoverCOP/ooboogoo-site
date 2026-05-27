@@ -16,7 +16,15 @@ export default function Nav() {
   return (
     <header className="nav-header">
       <div className="nav-inner">
-        <Link href="/" className="nav-logo">OooBooGoo</Link>
+        <Link href="/" aria-label="OooBooGoo home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-ooboogoo.png"
+            alt="OooBooGoo"
+            className="logo-ooboogoo"
+            style={{ height: 28 }}
+          />
+        </Link>
         <nav aria-label="Main navigation" className="nav-links">
           {links.map(({ href, label }) => (
             <Link

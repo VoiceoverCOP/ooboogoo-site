@@ -45,6 +45,13 @@ export default function HomePage() {
         <div className="bento-grid">
           <div className="bento-cell bento-cell--featured" aria-label="Rede.fm — flagship product">
             <div>
+              <div className="logo-rede-wrap" style={{ marginBottom: 20 }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <picture>
+                  <source srcSet="/rede_web_png/Rede_fm_DARK.png" media="(prefers-color-scheme: dark)" />
+                  <img src="/rede_web_png/rede-light.png" alt="Rede.fm" className="logo-rede" style={{ height: 36 }} />
+                </picture>
+              </div>
               <span className="bento-tag">Flagship Product — Limited Release</span>
               <h3 className="bento-name">Rede.fm</h3>
               <p className="bento-desc">
@@ -68,6 +75,10 @@ export default function HomePage() {
           </div>
 
           <div className="bento-cell">
+            <div className="logo-shap-wrap" style={{ marginBottom: 20 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-shap-media.PNG" alt="SHAP Media Group" className="logo-shap" style={{ height: 48 }} />
+            </div>
             <span className="bento-tag">Media &amp; Consulting</span>
             <h3 className="bento-name">SHAP Media Group</h3>
             <p className="bento-desc">
