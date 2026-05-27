@@ -1,65 +1,101 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "OooBooGoo Inc. — Software for macOS and iOS",
+  description:
+    "OooBooGoo Inc. builds thoughtful software for macOS and iOS — productivity tools and utilities designed around how people actually work.",
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <section aria-labelledby="hero-heading">
+        <div className="hero">
+          <p className="hero-eyebrow">OooBooGoo Inc.</p>
+          <h1 id="hero-heading" className="hero-title">
+            Software built around real workflows.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="hero-body">
+            We design and develop software for macOS and iOS that removes
+            friction from everyday work. Every product we ship starts with a
+            genuine problem and ends with a clear, focused solution.
           </p>
+          <div className="hero-actions">
+            <Link href="/products" className="btn btn-primary">
+              View Our Products
+            </Link>
+            <Link href="/about" className="btn btn-ghost">
+              About the Company
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="what-we-do-heading" className="section">
+        <p className="section-eyebrow">What We Do</p>
+        <h2 id="what-we-do-heading" className="section-title">
+          Independent software, thoughtfully made.
+        </h2>
+        <p className="section-body">
+          OooBooGoo Inc. is an independent software company headquartered in
+          San Francisco, CA. We build focused, high-quality apps for Apple
+          platforms — each one designed to do one thing exceptionally well.
+        </p>
+
+        <div className="stat-row">
+          <div className="stat-item">
+            <p className="stat-num">3+</p>
+            <p className="stat-label">Apps published</p>
+          </div>
+          <div className="stat-item">
+            <p className="stat-num">10k+</p>
+            <p className="stat-label">Users worldwide</p>
+          </div>
+          <div className="stat-item">
+            <p className="stat-num">100%</p>
+            <p className="stat-label">Indie, no outside funding</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="products-preview-heading" className="section">
+        <p className="section-eyebrow">Our Software</p>
+        <h2 id="products-preview-heading" className="section-title">
+          Tools we&apos;ve shipped.
+        </h2>
+        <p className="section-body">
+          From quick-capture utilities to structured project tools, everything
+          we build lives natively on Apple&apos;s platforms.
+        </p>
+        <div style={{ marginTop: 32 }}>
+          <Link href="/products" className="btn btn-ghost">
+            See All Products &rarr;
+          </Link>
+        </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="cta-heading" className="section">
+        <p className="section-eyebrow">Get in Touch</p>
+        <h2 id="cta-heading" className="section-title">
+          Questions? We&apos;d love to hear from you.
+        </h2>
+        <p className="section-body">
+          Whether you have feedback on our apps, a press inquiry, or a support
+          question — we read every message.
+        </p>
+        <div style={{ marginTop: 32 }}>
+          <Link href="/contact" className="btn btn-primary">
+            Contact Us
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
