@@ -624,34 +624,14 @@
   width: auto;
   mix-blend-mode: multiply;
 }
-@media (prefers-color-scheme: dark) {
-  .logo-ooboogoo {
-    mix-blend-mode: normal;
-    filter: invert(1);
-  }
-}
 
-/* Rede.fm: has red — can't invert. multiply in light, white pill in dark */
 .logo-rede {
   display: block;
   width: auto;
   mix-blend-mode: multiply;
 }
 .logo-rede-wrap {}
-@media (prefers-color-scheme: dark) {
-  .logo-rede {
-    mix-blend-mode: normal;
-  }
-  .logo-rede-wrap {
-    background: rgb(255 255 255 / 0.96);
-    border-radius: 8px;
-    padding: 6px 14px;
-    display: inline-flex;
-    align-items: center;
-  }
-}
 
-/* SHAP Media: monochrome flat — same treatment as OooBooGoo */
 .logo-shap-wrap {
   display: inline-flex;
   align-items: center;
@@ -660,10 +640,4 @@
   display: block;
   width: auto;
   mix-blend-mode: multiply;
-}
-@media (prefers-color-scheme: dark) {
-  .logo-shap {
-    mix-blend-mode: normal;
-    filter: invert(1);
-  }
 }

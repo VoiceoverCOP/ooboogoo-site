@@ -37,6 +37,18 @@ const services = [
     desc: "Creative direction and production oversight for video, audio, and live productions - from pre-production planning through final delivery.",
   },
   {
+    title: "Drone Photography & Videography",
+    desc: "Aerial and dynamic ground-level visuals for brand content, event coverage, and location shoots. Cinematic perspectives that ground-based production can't reach.",
+  },
+  {
+    title: "Voiceover & On-Air Presenting",
+    desc: "Professional voice talent and on-camera presenting for broadcast, digital, and corporate productions. Delivery that sounds as intentional as the content it serves.",
+  },
+  {
+    title: "On-Air Personality & Hosting",
+    desc: "Experienced hosting for radio, television, live events, and digital media - bringing authority, warmth, and presence to any format.",
+  },
+  {
     title: "Media Systems Audits",
     desc: "A structured review of existing media operations, tooling, and workflows - with a clear written report and prioritised recommendations.",
   },
@@ -62,11 +74,69 @@ export default function ShapMediaPage() {
         <p className="hero-body">
           SHAP Media Group is the consulting and production arm of OooBooGoo Inc.
           We work with creators, media organisations, and brands that need more
-          than advice - they need systems that actually operate.
+          than advice - they need systems that actually operate. Our work is
+          grounded in real-world experience: understanding how communication
+          works under pressure, how trust is built over time, and how to build
+          a media presence that holds up.
         </p>
         <div className="hero-actions">
           <Link href="/contact" className="btn btn-primary">Start a conversation</Link>
           <Link href="/about" className="btn btn-ghost">About OooBooGoo</Link>
+        </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="founder-heading" className="section">
+        <p className="section-eyebrow">Who We Are</p>
+        <h2 id="founder-heading" className="section-title">
+          Built on 20 years of real-world communication.
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "start" }}>
+          <div>
+            <p className="section-body">
+              SHAP Media Group was founded by Sean Shapiro - a former police officer
+              and media relations specialist with over two decades in public service
+              and strategic communication. Sean built his reputation transforming
+              how the Toronto Police connected with the public online, developing
+              the systems and voice that let a large institution communicate with
+              clarity and trust at scale.
+            </p>
+            <p className="section-body" style={{ marginTop: 16 }}>
+              That background shapes everything about how we work. Public service
+              teaches you that communication isn&apos;t just messaging. It&apos;s credibility.
+              It&apos;s trust built in real time, under real pressure, with real
+              consequences. We bring that same discipline to every client engagement
+              - whether that&apos;s a podcast launch, a brand&apos;s social strategy, or a
+              complex production build.
+            </p>
+            <p className="section-body" style={{ marginTop: 16 }}>
+              We don&apos;t do fluff. We don&apos;t do cookie-cutter. We work with clients
+              who want content that&apos;s clear, authentic, and built to actually
+              connect with the people it&apos;s meant to reach.
+            </p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+            {[
+              { label: "20+ years", desc: "Public service and strategic communication experience" },
+              { label: "Trust-first", desc: "Every engagement starts with credibility, not just content" },
+              { label: "Operator mindset", desc: "Systems that work under real conditions, not ideal ones" },
+              { label: "North America", desc: "Working with organisations and creators across the continent" },
+            ].map(({ label, desc }) => (
+              <div
+                key={label}
+                style={{
+                  padding: "20px 24px",
+                  border: "1px solid var(--color-border)",
+                  borderRadius: 12,
+                  background: "var(--color-surface)",
+                }}
+              >
+                <p style={{ fontWeight: 700, fontSize: "1.125rem", color: "var(--color-text)", marginBottom: 4 }}>{label}</p>
+                <p style={{ fontSize: "0.9rem", lineHeight: 1.6, color: "var(--color-text-muted)" }}>{desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -103,14 +173,62 @@ export default function ShapMediaPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 16, marginTop: 36 }}>
           {[
             { label: "Independent creators", desc: "Podcasters, streamers, YouTubers, and multi-platform creators scaling past the DIY stage." },
+            { label: "Business owners & entrepreneurs", desc: "Building a public voice, a content strategy, or a media presence that supports their business goals." },
             { label: "Media organisations", desc: "Newsrooms, editorial teams, and broadcast groups building digital-first production capacity." },
             { label: "Brands with a voice", desc: "Companies developing original content, executive communication programmes, and owned-media properties." },
-            { label: "Speaker & thought leaders", desc: "Individuals building a public presence through keynotes, podcast appearances, and digital content." },
+            { label: "Speakers & thought leaders", desc: "Individuals building a public presence through keynotes, podcast appearances, and digital content." },
+            { label: "Professionals in transition", desc: "People moving from institutional or public-sector roles into the creator or media economy." },
           ].map(({ label, desc }) => (
             <div key={label} style={{ padding: "24px", border: "1px solid var(--color-border)", borderRadius: 12, background: "var(--color-surface)" }}>
               <h3 style={{ fontSize: "1rem", fontWeight: 700, color: "var(--color-text)", marginBottom: 8 }}>{label}</h3>
               <p style={{ fontSize: "0.9rem", lineHeight: 1.65 }}>{desc}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      <section aria-labelledby="ventures-heading" className="section">
+        <p className="section-eyebrow">Other Ventures</p>
+        <h2 id="ventures-heading" className="section-title">
+          Beyond the agency work.
+        </h2>
+        <p className="section-body">
+          Sean&apos;s work in public safety communication extends beyond client
+          engagements into two ongoing projects rooted in that same background.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 16, marginTop: 36 }}>
+          {[
+            {
+              label: "Better Traffic",
+              url: "https://bettertraffic.ca",
+              desc: "A not-for-profit organisation dedicated to traffic safety education and awareness across Canada.",
+            },
+            {
+              label: "Ask A Traffic Cop",
+              url: "https://askatrafficcop.ca",
+              desc: "A livestream show covering traffic safety questions and road law, operating under the Better Traffic umbrella.",
+            },
+          ].map(({ label, url, desc }) => (
+            <a
+              key={label}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "block",
+                padding: "24px",
+                border: "1px solid var(--color-border)",
+                borderRadius: 12,
+                background: "var(--color-surface)",
+                textDecoration: "none",
+              }}
+            >
+              <h3 style={{ fontSize: "1rem", fontWeight: 700, color: "var(--color-text)", marginBottom: 8 }}>{label}</h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.65, color: "var(--color-text-muted)", marginBottom: 12 }}>{desc}</p>
+              <span style={{ fontSize: "0.85rem", color: "var(--color-accent)", fontWeight: 600 }}>Visit site →</span>
+            </a>
           ))}
         </div>
       </section>

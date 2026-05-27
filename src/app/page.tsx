@@ -53,7 +53,6 @@ export default function HomePage() {
                 </picture>
               </div>
               <span className="bento-tag">Flagship Product - Limited Release</span>
-              <h3 className="bento-name">Rede.fm</h3>
               <p className="bento-desc">
                 The preparation and production platform for creators,
                 broadcasters, podcasters, and live show hosts. Rede.fm

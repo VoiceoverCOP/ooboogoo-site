@@ -24,7 +24,17 @@
       "Bash(git -C /Users/aatc/code/ooboogoo-site remote add origin https://github.com/VoiceoverCOP/ooboogoo-site.git)",
       "Bash(git -C /Users/aatc/code/ooboogoo-site push -u origin main)",
       "Bash(git -C /Users/aatc/code/ooboogoo-site commit -m \"feat: wire brand logos into nav, footer, and all brand pages\")",
-      "Bash(git -C /Users/aatc/code/ooboogoo-site push)"
+      "Bash(git -C /Users/aatc/code/ooboogoo-site push)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(vercel --prod)",
+      "Bash(vercel deploy *)",
+      "Bash(vercel --yes)",
+      "Bash(vercel ls *)",
+      "WebFetch(domain:www.shapmediagroup.com)",
+      "Bash(curl -s http://localhost:3000/shap-media)",
+      "Bash(curl -sv http://localhost:3000/shap-media)",
+      "Bash(curl -s http://localhost:3000/)"
     ]
   }
 }

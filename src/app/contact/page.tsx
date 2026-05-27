@@ -39,6 +39,16 @@ export default function ContactPage() {
                 href: "mailto:support@ooboogoo.com",
               },
               {
+                label: "SHAP Media Group",
+                value: "info@shapmediagroup.com",
+                href: "mailto:info@shapmediagroup.com",
+              },
+              {
+                label: "SHAP Media - Phone",
+                value: "(416) 222-0157",
+                href: "tel:+14162220157",
+              },
+              {
                 label: "Press & Media",
                 value: "media@ooboogoo.com",
                 href: "mailto:media@ooboogoo.com",
